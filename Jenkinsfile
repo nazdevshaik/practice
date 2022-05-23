@@ -1,4 +1,4 @@
-pipepile {
+pipeline {
   agent none 
   stages {
       stage ('main branhc') {
