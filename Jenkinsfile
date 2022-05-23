@@ -3,8 +3,10 @@ agent none
 triggers {
 cron ('* * * * *')
 }
+stages{
+stage ('fetch') {
 when {
-allOf { 
+allOf {
  branch "main"
 branch "p1"
 branch "p2"
@@ -13,8 +15,7 @@ branch "pefeature"
 branch "p4"
 }
 }
-stages{
-stage ('fetch') {
+
  steps {
  sh ' echo "hello fetch"'
 }
