@@ -1,6 +1,6 @@
 pipeline {
 agent none 
-trigger {
+triggers {
 cron ('* * * * *')
 }
 when {
