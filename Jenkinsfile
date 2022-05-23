@@ -1,7 +1,7 @@
 pipeline {
 agent none 
 trigger {
-cron (* * * * *)
+cron ('* * * * *')
 }
 when {
 allOf { 
