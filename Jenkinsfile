@@ -1,4 +1,5 @@
 pipeline {
+
 agent none 
 triggers {
 cron ('* * * * *')
@@ -15,9 +16,6 @@ branch "pefeature"
 branch "p4"
 }
 }
-
- steps {
- sh ' echo "hello fetch"'
 }
 }
 }
